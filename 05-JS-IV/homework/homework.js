@@ -64,7 +64,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario.email != undefined | usuario.email != null)
+  if (usuario.email != undefined || usuario.email != null)
     return true
   return false
 }
@@ -73,7 +73,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto[propiedad] != undefined | objeto[propiedad] != null)
+  if (objeto[propiedad]) // alcanza tmb con solo poner objeto, porque en booleano las otras dos son false
     return true;
   return false;
 }
